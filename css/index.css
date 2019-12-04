@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+
+:root {
+    font-family: 'Baskervville', serif;
+    --main-color: black;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+
+header .logo{
+    font-family: 'Baskervville', serif;
+    font-size: 3rem;
+    text align : center;
+    margin: 1rem 0;
+ 
+ }
+
+
+header nav .menu {
+            display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+
+}
+header nav .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+
+header nav .menu a:hover {
+    border: 1px solid var(--main-color) 
+
+}
+ @media (min-width: 576px) {
+     header nav {
+         display: flex;
+         align-items: center;
+
+     }
+     header .menu {
+        flex: 1;
+    }
+ }
+
+header .banner {
+    background-image: url(../img/waterfall.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    font-size: 5rem;
+    font-family: 'Baskervville', serif;
+}
