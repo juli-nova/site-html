@@ -1,16 +1,10 @@
 
-const text = document.querySelector('textarea');
-
-document.querySelector('input[type=submit]')
-  .addEventListener('click', saveText);
-
-document.querySelector('.load')
-  .addEventListener('click', loadText);
-
-function saveText(e) {
-  e.preventDefault();
-  localStorage['text'] = text.value;
+const btnFetchHtml = document.querySelector('.fetch-html');
+btnFetchHtml.addEventListener('click', fetchHtml);
+function fetchHtml() {
+    fetch('client-data.html')
+        .then( response => response.text() )
+        .then( html =>  document.querySelector('.html-container')
+                .innerHTML = html );
 }
 
-function loadText() {
-  text.value = localStorage['text'] || '';
