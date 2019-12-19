@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-
 <body>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
@@ -23,17 +23,29 @@
 	<header>
 		<p class='title'>Expeditions around the world</p>
 
-		<nav class="mainnav">          
-			  <ul class='menu'>
-				              <li><a href='#'>Countries</a></li>
-				              <li><a href='#'>Destinations</a></li>  
-				              <li><a href='#'>Reviews</a></li>
-				              <li><a href='#'>Contact us</a></li>     
-				       </ul>   
-			     </nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Countries</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Destinations <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+  </div>
+</nav>
 
-
-		        <img src="img/waterfall.jpg" width="1100" height="440" alt="waterfall"> 
+<img src="img/waterfall.jpg" class="img-fluid" alt="Responsive image">
              </header>   
              <div class="banner">  
               </div>
@@ -44,7 +56,7 @@
 		<section>
 			<h4>User info</h4>
 			<div class="html-container"></div>
-			<button class="fetch-html">I want to know more</button>
+			<button class="fetch-html">Show my balance</button>
 		</section>
 		<script src="js/index.js"></script>
 		<section>
@@ -114,30 +126,29 @@
 							</div>
 						</div>
 						<h1>Reviews</h1>
-						<img src="img/man-avatar.jpg" width="50" height="50" alt="icon">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore
-							et dolore
-							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex
-							ea
-							commodo consequat.</p>
-						<img src="img/man-avatar-profile.jpg" width="50" height="50" alt="icon">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore
-							et dolore
-							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip
-							ex
-							ea
-							commodo consequat.</p>
+
+<div class="card" style="width: 18rem;">
+  <img src="img/man-avatar.jpg" class="card-img-top" alt="profiles picture">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="img/man-avatar-profile.jpg" class="card-img-top" alt="profiles picture">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+						
 						<section>
-							<h2>Love travel? You've come to the right place</h2>
-							<h3>Enter your details to get travel inspiration, trending destinations and amazing offers
+                        <span class="badge badge-pill badge-secondary">Love travel? You've come to the right place</span>
+
+							<h4>Enter your details to get travel inspiration, trending destinations and amazing offers
 								delivered to
 								your
-								inbox</h3>
+								inbox</h4>
 							<form>
 								<label>Name:
           <input type="text" placeholder="Your name">
@@ -147,7 +158,7 @@
           <input type="text"  placeholder="Your email">
           </label>
 								<h2>Your comment</h2>
-								<textarea rows="10" cols="20">
+								<textarea rows="5" cols="10">
 
     </textarea>
 								<br>
